@@ -1,3 +1,118 @@
-body{
-    background-color: brown;
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
 }
+
+body{
+    background-color: #94D9EA;
+}
+
+.main-content{
+
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+}
+
+.left-section{
+
+    grid-column: span 2;
+    height: 100%;
+    background-color: #17354d;
+}
+.right-section{
+
+    grid-column: span 5;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.left-content{
+    padding: 1rem 2rem;
+}
+
+.profile{
+    width: 100%;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.profile img{
+    width: 55%;
+    height: 25vh;
+    border: 8px solid #0e244b;
+    margin: 10px 80px 10px 80px;  
+}
+
+.name{
+    font-size: 1.8rem;
+    color:#f7f7f7;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+}
+
+.career{
+    font-size: 1.2rem;
+    color:#b6d6d6;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;   
+}
+
+.main-title{
+    font-size: 1.5rem;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+}
+
+.contact-info ul{
+    padding-top: 1rem;
+}
+
+.contact-info ul li{
+    color: #b6d6d6;
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li i{
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    color: #94D9EA;
+}
+
+.skill-section ul li{
+
+}
+
+.progress-bar{
+    width: 100%;
+    height: .4rem;
+    background-color: #2D4738;
+    position: relative;
+    border-radius: 12px;
+}
+
+.progress{
+    height: 100%;
+    background-color: #94D9EA;
+    position: absolute;
+    left: 0;
+    border-radius: 12px;
+}
+
+.html-progress{
+    width: 70%;
+}
+
