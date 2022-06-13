@@ -34,9 +34,20 @@ body{
 }
 
 .left-content{
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
 }
 
+
+.main-title{
+    font-size: 1.5rem;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* profile */
 .profile{
     width: 100%;
     border-bottom: 1px solid #f7f7f7;
@@ -44,7 +55,7 @@ body{
 
 .profile img{
     width: 55%;
-    height: 25vh;
+    height: 23vh;
     border: 8px solid #0e244b;
     margin: 10px 80px 10px 80px;  
 }
@@ -67,23 +78,19 @@ body{
     padding-bottom: 0.5rem;   
 }
 
-.main-title{
-    font-size: 1.5rem;
-    color: #f7f7f7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-top: 2rem;
-}
 
+/* contact */
 .contact-info ul{
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 }
 
 .contact-info ul li{
     color: #b6d6d6;
-    padding: .4rem 0;
+    padding: .29rem 0;
     display: flex;
     align-items: center;
+    overflow-wrap: anywhere;
+    /* word-break: break-all; */
 }
 
 .contact-info ul li i{
@@ -92,10 +99,48 @@ body{
     color: #94D9EA;
 }
 
-.skill-section ul li{
-
+/* references */
+.sub-title{
+    font-size: 1rem;
+    color: #f7f7f7;
+    padding-bottom: .4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
+.references-section ul{
+    padding-bottom: 1.3rem;
+}
+
+/* .references-section ul li{
+    color:#b6d6d6;
+    padding: .2rem;
+    display: flex;
+    align-items: stretch;
+}
+.references-section ul li i{
+    font-size: .8rem;
+    padding-right: .5rem;
+    color: #94D9EA;
+} */
+.designation{
+    color:#f7f7f7;
+    padding-bottom: .4rem;
+}
+
+/* skill */
+.skill-title{
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.skills-section ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: .2rem 0;
+}
 .progress-bar{
     width: 100%;
     height: .4rem;
@@ -103,7 +148,6 @@ body{
     position: relative;
     border-radius: 12px;
 }
-
 .progress{
     height: 100%;
     background-color: #94D9EA;
@@ -111,8 +155,22 @@ body{
     left: 0;
     border-radius: 12px;
 }
-
 .html-progress{
-    width: 70%;
+    width: 95%;
+}
+.css-progress{
+    width: 90%;
+}
+.js-progress{
+    width: 45%;
+}
+.mysql-progress{
+    width: 80%;
+}
+.java-progress{
+    width: 85%;
+}
+.visualc-progress{
+    width: 65%;
 }
 
