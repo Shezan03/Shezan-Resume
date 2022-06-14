@@ -32,7 +32,7 @@ body{
     height: 100%;
     background-color: #f7f7f7;
 }
-
+/* left section */
 .left-content{
     padding: 2rem 3rem;
 }
@@ -174,3 +174,72 @@ body{
     width: 65%;
 }
 
+/* right section */
+.right-content{
+    padding: 2rem 3rem;
+}
+
+.right-title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #176ea0;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+.right-title::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: .1rem;
+    top: 50%;
+    background-color: #176ea0;
+    transform: translateY(-50%);
+    
+}
+.para{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #718096;
+    text-align: justify;
+}
+
+/* aboutme */
+.about{
+    padding-bottom: 2rem;
+}
+
+/* experience */
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.tl-title{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #244b6b;
+    text-transform: uppercase;
+}
+.tl-title-2{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color:#244b6b;
+    text-transform: uppercase;
+}
+
+.tl-content{
+    border-left: 1px solid #718096;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.tl-title-2::before{
+    content: "";
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    background-color: #718096;
+    border-radius: 50%;
+    left: 0;
+    transform: translateX(-50%);
+}
