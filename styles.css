@@ -316,3 +316,17 @@ body{
     }
 
 }
+@media screen and (max-width: 380px){
+
+    .name{
+        font-size: .8rem;
+    }
+
+    .main-title{
+        font-size: 1rem;
+    }
+    .skill-title{
+        font-size: .8rem;
+    }
+
+}
