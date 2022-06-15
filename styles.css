@@ -43,8 +43,18 @@ body{
     color: #f7f7f7;
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: relative;   
     padding-top: 2rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1.2rem;
+}
+.main-title::after{
+    position: absolute;
+    content: "";
+    border-bottom: 3px solid #176ea0;
+    border-radius: 3px;
+    left: 0;
+    top: 100%;
+    width:20%;
 }
 
 /* profile */
@@ -52,12 +62,15 @@ body{
     width: 100%;
     border-bottom: 1px solid #f7f7f7;
 }
-
+.image{
+    width: 100%;
+    text-align: center;
+}
 .profile img{
     width: 55%;
     height: 23vh;
     border: 8px solid #0e244b;
-    margin: 10px 80px 10px 80px;  
+     
 }
 
 .name{
@@ -144,7 +157,7 @@ body{
 .progress-bar{
     width: 100%;
     height: .4rem;
-    background-color: #2D4738;
+    background-color: #27568b;
     position: relative;
     border-radius: 12px;
 }
@@ -193,7 +206,7 @@ body{
     width: 60%;
     height: .1rem;
     top: 50%;
-    background-color: #176ea0;
+    background-color: #718096;
     transform: translateY(-50%);
     
 }
@@ -202,6 +215,11 @@ body{
     line-height: 1.5rem;
     color: #718096;
     text-align: justify;
+    
+}
+
+.sect{
+    padding-bottom: 2rem;
 }
 
 /* aboutme */
@@ -218,28 +236,83 @@ body{
     font-size: 1.2rem;
     letter-spacing: 1px;
     color: #244b6b;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .tl-title-2{
     font-size: 1.2rem;
     letter-spacing: 1px;
-    color:#244b6b;
+    color:#5a97c9;
     text-transform: uppercase;
 }
 
 .tl-content{
-    border-left: 1px solid #718096;
+    border-left: 1.5px solid #718096;
     padding-left: 2rem;
     position: relative;
+    padding-bottom: 1rem;
 }
 
 .tl-title-2::before{
     content: "";
     position: absolute;
-    width: .5rem;
-    height: .5rem;
-    background-color: #718096;
-    border-radius: 50%;
-    left: 0;
-    transform: translateX(-50%);
+    width: .7rem;
+    height: .7rem;
+    background-color: #5a97c9;
+    border-radius: 50%;  
+    transform: translateX(-61%);
+    left: 0%;
+}
+
+/* Media Quarries */
+@media screen and (max-width: 800px){
+    .right-title::after{
+        width:30%;
+    }
+}
+@media screen and (max-width: 700px){
+    .right-title::after{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 600px){
+    .right-title::after{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 780px){
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 800px){
+    .left-section{
+        grid-column: span 3;
+    }
+    .right-section{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width: 1200px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile img{
+        width: 20%;
+        
+    }
+
+}
+@media screen and (max-width: 700px){
+
+    .profile img{
+        width: 60%;
+    }
+
+}
+@media screen and (max-width: 390px){
+
+    .name{
+        font-size: 1.1rem;
+    }
+
 }
